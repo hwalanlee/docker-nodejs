@@ -1,0 +1,19 @@
+/var/log/secure
+
+Dec 31 05:20:08 ip-172-20-0-100 sshd[8831]: Invalid user user1 from x.x.x.x port 51877
+Dec 31 05:20:08 ip-172-20-0-100 sshd[8831]: input_userauth_request: invalid user user1 [preauth]
+Dec 31 05:20:10 ip-172-20-0-100 sshd[8834]: pam_exec(sshd:auth): execve(/opt/pam-keycloak-oidc/pam-keycloak-oidc,...) failed: Permission denied
+Dec 31 05:20:10 ip-172-20-0-100 sshd[8831]: pam_exec(sshd:auth): /opt/pam-keycloak-oidc/pam-keycloak-oidc failed: exit code 13
+Dec 31 05:20:10 ip-172-20-0-100 sshd[8831]: pam_unix(sshd:auth): check pass; user unknown
+Dec 31 05:20:10 ip-172-20-0-100 sshd[8831]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=x.x.x.x
+Dec 31 05:20:12 ip-172-20-0-100 sshd[8831]: Failed password for invalid user user1 from x.x.x.x port 51877 ssh2
+Dec 31 05:20:15 ip-172-20-0-100 sshd[8831]: error: Received disconnect from x.x.x.x port 51877:0:  [preauth]
+
+Dec 31 06:43:26 ip-172-20-0-100 sshd[12569]: Invalid user user1 from x.x.x.x port 57225
+Dec 31 06:43:26 ip-172-20-0-100 sshd[12569]: input_userauth_request: invalid user user1 [preauth]
+Dec 31 06:43:28 ip-172-20-0-100 sshd[12569]: pam_exec(sshd:auth): /opt/pam-exec-oauth2/pam-exec-oauth2 failed: exit code 1
+Dec 31 06:43:28 ip-172-20-0-100 sshd[12569]: pam_unix(sshd:auth): check pass; user unknown
+Dec 31 06:43:28 ip-172-20-0-100 sshd[12569]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=x.x.x.x
+Dec 31 06:43:29 ip-172-20-0-100 sshd[12569]: Failed password for invalid user user1 from x.x.x.x port 57225 ssh2
+Dec 31 06:43:31 ip-172-20-0-100 sshd[12569]: error: Received disconnect from x.x.x.x port 57225:0:  [preauth]
+Dec 31 06:43:31 ip-172-20-0-100 sshd[12569]: Disconnected from x.x.x.x port 57225 [preauth]

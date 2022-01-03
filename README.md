@@ -8,6 +8,18 @@ git push -u origin master
 git add . && git commit -m "commit" && git push origin master
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+- sshd 에러
+    - pam_exec(sshd:auth): execve(/opt/pam-keycloak-oidc/pam-keycloak-oidc,...) failed: Permission denied
+      pam_exec(sshd:auth): /opt/pam-keycloak-oidc/pam-keycloak-oidc failed: exit code 13
+    - pam_exec(sshd:auth): /opt/pam-exec-oauth2/pam-exec-oauth2 failed: exit code 1
+
+- 분석 하지 못함
+    - export PAM_USER=user1
+      echo 1234 | /opt/pam-keycloak-oidc/pam-keycloak-oidc
+        >>> -bash: /opt/pam-keycloak-oidc/pam-keycloak-oidc: Is a directory
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 도커 이미지 빌드
     > docker build -t 이미지명 .
